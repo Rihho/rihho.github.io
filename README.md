@@ -1,2 +1,2 @@
-# [My Personal Pages](tsumoru.tk)
-###静态网页托管
+# tsumoru.github.io
+静态网页托管
