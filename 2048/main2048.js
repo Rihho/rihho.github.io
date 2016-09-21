@@ -164,9 +164,9 @@ $(document).keydown(function(event) {
 });
 
 //触控事件监听
-document.addEventListener('touchmove', function (event) {
+document.body.addEventListener('touchmove', function (event) {
 	event.preventDefault();
-})
+},false);
 document.addEventListener('touchstart', function(event) {
 	startx = event.touches[0].pageX;
 	starty = event.touches[0].pageY;
