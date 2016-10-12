@@ -1,0 +1,85 @@
+.container {
+	width: 800px;
+	height: 450px;
+	overflow: hidden;
+	border: 2px solid #000;
+	margin: 50px auto;
+	position: relative;
+}
+#list {
+	width: 4000px;
+	position: absolute;
+}
+.container img {
+	width: 800px;
+	height: auto;
+	float: left;
+}
+.container:hover .button div {
+	display: block;
+}
+.prev, .next {
+	width: 50px;
+	height: 50px;
+	background-color: rgba(0,0,0,0.3);
+	z-index: 10;
+	position: absolute;
+	display: none;
+}
+.prev {
+	left: 20px;
+	top: 40%;
+}
+.prev:after {
+	content: '';
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	left: 20px;
+	top: 10px;
+	transform: rotate(-45deg);
+}
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+.next {
+	right: 20px;
+	top: 40%;
+}
+.next:after {
+	content: '';
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	transform: rotate(-45deg);
+}
+.status {
+	list-style: none;
+	overflow: hidden;
+	position: absolute;
+	bottom: 15px;
+	left: 355px;
+	padding: 0;
+	margin: 0;
+}
+.status li {
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	float: left;
+	margin-right: 7px;
+	background-color: rgba(0,0,0,0.3);
+	overflow: hidden;
+	cursor: pointer;
+}
+.status .on {
+	background-color: rgba(255,255,255,0.9);
+}
