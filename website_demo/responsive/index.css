@@ -1,0 +1,243 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: '黑体', Microsoft Yahei UI;
+	font-size: 20px;
+}
+a {
+	text-decoration: none;
+	color:#656565;
+}
+body {
+	background-color: #eee;
+}
+.body {
+	max-width: 415px;
+	margin: 0 auto;
+}
+/*头部*/
+header {
+	background-color: #91D4DA;
+	width: 100%;
+	color: white;
+	text-align: center;
+	height: 2rem;
+	line-height: 2rem;
+}
+header div {
+	position: absolute;
+	padding-left: 0.75rem;
+	font-size: 0.8rem;
+}
+header a {
+	color: white;
+	font-size: 1rem;
+}
+
+/*上部*/
+.navbox {
+	color: #656565;
+	float: left;
+	width: 20%;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	background-color: white;
+	border-bottom: 0.05rem solid #fff;
+}
+.navbox a {
+	font-size: .8rem;
+}
+nav {
+	background-color: #fff;
+}
+nav .selected {
+	border-bottom: 0.2rem solid #91D4DA;
+}
+nav img {
+	width: 100%;
+}
+nav hgroup {
+	width: 100%;
+	margin-top: -0.1rem;
+	position: relative;
+}
+nav hgroup .docbox {
+	width: 95%;
+	margin: 0.5rem auto;
+	padding-bottom: 15px;
+	border-bottom: 0.1rem solid #ccc;
+	overflow: hidden;
+}
+.menu {
+	float: left;
+	text-align: center;
+	margin: 0;
+	width: 20%;
+}
+.menu img {
+	width: 60%;
+}
+.menu a {
+	display: block;
+	font-size: 0.8rem;
+}
+.columns {
+	background-color: #fff;
+	width: 100%;
+	overflow: hidden;
+	padding: 0.5rem 0 0.8rem 0;
+	margin-top: -0.4rem;
+}
+.columns h2,h3 {
+	font-weight: normal;
+}
+.columns h2 {
+	font-size: 18px;
+}
+.columns h3 {
+	font-size: 14px;
+	color: #888;
+}
+.columns ul {
+	display: -ms-flexbox;
+	display: flex;
+	list-style: none;
+}
+.columns ul li {
+	-ms-flex: 1;
+	    flex: 1;
+	    text-align: center;
+}
+.columns ul li:not(:last-child) {
+	border-right: 0.1rem solid #ccc;
+}
+.columns ul li figure {
+	height: 4rem;
+	position: relative;
+}
+.columns img {
+	width: 2.5rem;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+/*中部*/
+section {
+	background-color: #fff;
+	margin-top: 1rem;
+	padding: .5rem;
+}
+section header {
+	background-color: #fff;
+	color: #656565;
+	text-align: left;
+	border-bottom: 0.1rem solid #ccc;
+}
+section article {
+	margin-top: .6rem;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: stretch;
+        align-items: stretch;
+}
+section article img {
+	width: 30%;
+	height: 30%;
+}
+section article ul {
+	display: -ms-flexbox;
+	display: flex;
+	list-style: none;
+	width: 67%;
+	-ms-flex-line-pack: justify;
+	    align-content: space-between;	/*自动换行后紧贴上下两侧*/
+	-ms-flex-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+section article li {
+	width: 48%;
+	height: 45%;
+	line-height: 2rem;
+	text-align: center;
+	background-color: #F8F8F8;
+	font-size: .75rem;
+}
+
+/*文章部分*/
+footer {
+	background-color: #fff;
+	margin: 1rem 0 3rem 0;
+	padding: .5rem;
+}
+.singlepic {
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	margin-bottom: .35rem;
+	padding-bottom: .35rem;
+	border-bottom: .07rem solid #DDD;
+}
+.singlepic img {
+	width: 30%;
+	height: 30%;
+	-ms-flex: 1.2;
+	    flex: 1.2;
+}
+.singlepic .right {
+	-ms-flex: 2;
+	    flex: 2;
+	    padding-left: .3rem;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+}
+.singlepic .right h2 {
+	font-size: .9rem;
+	color: #666;
+}
+.singlepic .right p {
+	font-size: .8rem;
+	color: #C5C5C5;
+}
+.multipic {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: row;
+	    flex-direction: column;
+}
+.multipic h2 {
+	font-size: .9rem;
+	color: #666;
+	padding-bottom: .3rem;
+}
+.multipic .buttompic {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: row;
+	    flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+
+}
+.buttompic img {
+	width: 32%;
+	height: 32%;
+}
+.multipic p {
+	font-size: .8rem;
+	color: #C5C5C5;
+	margin-top: .3rem;
+}
