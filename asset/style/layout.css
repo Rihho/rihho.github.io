@@ -68,8 +68,10 @@ aside h6 {
 .title {
 	width: 100%;
 	height: 800px;
-	background: url(../images/pixelMap_small.jpg) no-repeat center center;
-	background-size:cover;
+	background: url(../images/pixelMap_small.jpg) no-repeat;
+	/*background-attachment: fixed;*/
+	background-position: bottom center;
+	background-attachment: fixed;
 }
 .title h3 {
 	display: block;
@@ -83,7 +85,7 @@ aside h6 {
 	font-weight: normal;*/
 }
 /*介绍*/
-.intro {
+.intro, .photograph, .acg {
 	background-color: #F4F4F4;
 }
 section .wrap {
@@ -97,7 +99,8 @@ section p {
 	padding-top: 20px;
 	line-height: 2;
 }
-.front-end span {
+/*前端*/
+.front-end span, .acg span {
 	font-size: 14px;
 	display: block;
 	margin-top: 10px;
@@ -136,4 +139,178 @@ section p {
 }
 .front-end .wrap {
 	padding-bottom: 60px;
+}
+/*摄影*/
+.photograph .wrap {
+	padding: 0;
+}
+.movepic {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 600px;
+	background: url(../images/photo.jpg) no-repeat center center;
+	background-attachment: fixed;
+}
+.movepic .content {
+	display: block;
+	height: 100%;
+	background-color: rgba(0,0,0,0.1450980392156863);
+	padding: 100px;
+}
+.movepic .content h6, .movepic .content p, .movepic .content span {
+	color: #fff;
+}
+.movepic img {
+	height: 50%;
+	margin-top: 10px;
+	transition: all 0.3s ease 0s;
+}
+.movepic img:hover {
+	transform: scale(0.99);
+}
+.movepic .content span {
+	display: block;
+	font-weight: bold;
+	text-decoration: underline;
+}
+/*视频*/
+.video {
+	overflow: hidden;
+}
+.video ul {
+	position: relative;
+}
+.video li {
+	float: left;
+	width: 50%;
+	overflow: hidden;
+	position: relative;
+}
+.video li img {
+	width: 100%;
+	display: block;
+	position: relative;
+	z-index: 1;
+}
+.video span {
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+    text-decoration: underline;
+    color: #DC4C4C;
+}
+.video .wrap {
+	padding-bottom: 20px;
+}
+.video a {
+	display: block;
+}
+.video .hover {
+	display: block;
+	position: absolute;
+	z-index: 10;
+	bottom: 0px;
+	width: 100%;
+	height: 100px;
+	background: rgba(0,0,0,0.7);
+	padding: 10px 20px;
+	box-sizing: border-box;
+	transition: all 0.5s ease 0s;
+	opacity: 0;
+}
+.video li:hover .hover {
+	opacity: 1;
+}
+.video .hover h6 {
+	color: #fff;
+	font-size: 24px;
+}
+.video .hover p {
+	color: #ccc;
+	padding: 0;
+}
+/*ACG*/
+.acg ul {
+	margin-top: 20px;
+	overflow: hidden;
+}
+.acg li {
+	float: left;
+	margin-right: 20px;
+	width: 240px;
+	text-align: center;
+	margin-top: 10px;
+	transition: all 0.3s ease 0s;
+}
+.acg li:hover {
+	margin-top: 0px;
+}
+.acg li:last-child {
+	margin-right: 0;
+}
+.acg img {
+	width: 190px;
+	height: 120px;
+	border-radius: 5px;
+}
+.acg a {
+	text-decoration: none;
+}
+.acg li h6 {
+	color: #000;
+	font-size: 16px;
+	margin-top: 10px;
+}
+/*联系我*/
+.contact {
+	height: 400px;
+	background: url(../images/bg.jpg) no-repeat 100%;
+}
+.contact .wrap {
+	padding-top: 80px;
+}
+.contact h6 {
+	color: #fff;
+}
+.contact img {
+	width: 100px;
+}
+.contact ul {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 60px;
+}
+.contact li {
+	cursor: pointer;
+}
+.code {
+	position: relative;
+}
+.code span {
+	display: block;
+	position: absolute;
+	float: left;
+	top: -200px;
+	left: -50px;
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+}
+.code span img {
+	width: 200px;
+}
+.code:hover span {
+	opacity: 1;
+	top: -230px;
+}
+/*底部*/
+footer {
+	height: 150px;
+	position: relative;
+}
+footer p {
+	font-size: 16px;
+	color: #777;
+	text-align: center;
+	line-height: 150px;
 }
