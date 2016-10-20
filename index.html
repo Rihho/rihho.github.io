@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Back to Front</title>
 	<link rel="stylesheet" href="asset/style/layout.css">
+	<script src="asset/scripts/jquery-3.1.0.js"></script>
+	<script src="asset/scripts/jquery.easing.1.3.js"></script>
 </head>
 <body>
 	<aside>
@@ -12,7 +14,7 @@
 			<img src="asset/images/avatar.jpg" alt="avatar">
 		</div>
 		<p>黄 昱豪<span>Tsumoru</span></p>
-		<ul>
+		<ul id="list">
 			<li class="selected">我在这里</li>
 			<li>关于我</li>
 			<li>前端</li>
@@ -25,19 +27,19 @@
 	</aside>
 
 	<div class="rightcontent">
-		<header>
+		<section id="top">
 			<div class="title">
 				<h3>黄昱豪</h3>
 			</div>
-		</header>
+		</section>
 
-		<section class="intro">
+		<section class="intro" id="intro">
 			<div class="wrap">
 				<h6>关于我</h6>
 				<p>1994年生人，成长于巴蜀之地。2016年本科毕业于中国海洋大学新闻系。现居重庆市。<br>自小爱钻研，行走在技术宅的道路上。热爱设计，热爱将设想变为平面图形、视频和网页。熟练掌握DIV+CSS，了解原生Javascript及jQuery库，熟悉平面设计原则及设计语言表达，对Canvas兴趣浓厚。</p><p>自学能力强，精通摄影摄像器材及相关后期软件，熟悉计算机原理，善于解决各种技术问题。<br>微电影、纪录片爱好者，大学期间曾有相关作品。动漫爱好者，偶尔制作MAD，B站up主。</p>
 			</div>
 		</section>
-		<section class="front-end">
+		<section class="front-end" id="front">
 			<div class="wrap">
 				<h6>前端</h6>
 				<p>习惯于观察设计优秀的小众站点及遵循设计规范的各类app，由于本科专业特性未能深入探究底层实现，因此对表现层的前端设计产生了强烈兴趣，对移动端开发及响应式设计感兴趣。<br>
@@ -143,7 +145,7 @@
 				</ul>
 			</div>
 		</section>
-		<section class="photograph">
+		<section class="photograph" id="photograph">
 			<div class="wrap">
 				<div class="movepic">
 					<div class="content">
@@ -155,7 +157,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="video">
+		<section class="video" id="video">
 			<div class="wrap">
 				<h6>视频制作</h6>
 				<p>电影爱好者。<br>擅长剧情片策划，对镜头语言了解较深。尚在校时接触过各类视频拍摄设备及后期制作软件，掌握视频制作的整体流程。</p>
@@ -180,10 +182,10 @@
 				</li>
 			</ul>
 		</section>
-		<section class="acg">
+		<section class="acg" id="acg">
 			<div class="wrap">
 				<h6>ACG爱好者</h6>
-				<p>热爱宅文化，但目标一直是做一名现充。遇到喜欢的作品会有二次创作的冲动，因此对MAD及板绘亦有一定研究。</p>
+				<p>热爱宅文化，但目标始终是做一名现充。遇到喜欢的作品会有二次创作的冲动，因此对MAD及板绘亦有一定心得。</p>
 				<span>MAD作品：</span>
 				<ul>
 					<li>
@@ -204,7 +206,7 @@
 				</ul>
 			</div>
 		</section>
-		<section class="contact">
+		<section class="contact" id="contact">
 			<div class="wrap">
 				<h6>你可以在这里找到我</h6>
 				<ul>
@@ -219,6 +221,7 @@
 			<p>&copy;2016, Powered by Yuhao Huang</p>
 		</footer>
 	</div>
-	
+	<div class="backtotop" id="backTop"></div>
+	<script src="asset/scripts/main.js"></script>
 </body>
 </html>
